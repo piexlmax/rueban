@@ -2,8 +2,8 @@ package array
 
 // Drop
 // func Drop[T any](array []T, sub ...int) []T
-// e.g. array.Drop(['a', 'b', 'c', 'd', 'e'], 2,3)
-// ==> ['a', 'b', 'e']
+// e.g. array.Drop([]string{"a","b",}, 2,3)
+// ==> ["a", "b", "e"]
 func Drop[T any](array []T, sub ...int) []T {
 	var res []T
 	var dopMap = make(map[int]bool)
