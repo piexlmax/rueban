@@ -1,7 +1,5 @@
 package array
 
-type diffFunc[T any, V comparable] func(t T) V
-
 // Diffrernce
 // func Diffrernce[T any, V comparable](array []T, spArr []T, sp diffFunc[T, V]) []T
 // array.Diffrernce(array ,diffArr,func(t T) V)
