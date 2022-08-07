@@ -3,10 +3,10 @@ package array
 // Intersection
 // func Intersection[T any, V comparable](fn diffFunc[T, V], array ...[]T) []T
 //
-//	e.g. array.t.Log(Intersection(func(i string) string {
+//	e.g. array.Intersection(func(i string) string {
 //		return i
 //	},
-//		[]string{"a", "b", "c"}, []string{"b", "c", "d"}, []string{"b", "c", "f"}))
+//		[]string{"a", "b", "c"}, []string{"b", "c", "d"}, []string{"b", "c", "f"})
 //
 // ==> ["b", "c"]
 func Intersection[T any, V comparable](fn diffFunc[T, V], array ...[]T) []T {

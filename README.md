@@ -151,3 +151,14 @@ array.Intersection(
         },[]string{"a", "b", "c"}, []string{"b", "c", "d"}, []string{"b", "c", "f"})
 // ==> ["b","c"]
 ```
+
+#### Uniq
+
+```go
+array.Uniq(
+	func(i string) string {
+            return i
+        },[]string{"a", "b", "c","b","c"})
+
+// ==> ["a", "b", "c"]
+```
