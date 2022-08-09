@@ -166,16 +166,16 @@ array.Uniq(
 #### Nth
 
 ```go
-    Nth([]int{1,2,3,4,5}, 10)  ==> 5
-    Nth([]int{1,2,3,4,5}, 2)   ==> 3
-    Nth([]int{1,2,3,4,5}, -3)   ==> 3
+    Nth([]int{1,2,3,4,5}, 10) // ==> 5
+    Nth([]int{1,2,3,4,5}, 2)  // ==> 3
+    Nth([]int{1,2,3,4,5}, -3)  // ==> 3
 ```
 
 #### Pull
 
 ```go
-    Pull(func(i int) int { return i }, []int{1, 2, 2, 2, 23, 3, 12, 4, 5}, 2) ==> [1 23 3 12 4 5]
-    Pull(func(i TestStruct) string { return i.Name }, TestArr2, "name2") ==> [{name1} {name3} {name4} {name5}]
+    Pull(func(i int) int { return i }, []int{1, 2, 2, 2, 23, 3, 12, 4, 5}, 2)// ==> [1 23 3 12 4 5]
+    Pull(func(i TestStruct) string { return i.Name }, TestArr2, "name2")// ==> [{name1} {name3} {name4} {name5}]
 ```
 
 #### Remove
@@ -187,7 +187,7 @@ array.Uniq(
 
     Remove(func(i int) bool {
         return i < 3
-    }, []int{1, 2, 3, 4, 5}) ==> [3 4 5]
+    }, []int{1, 2, 3, 4, 5}) //==> [3 4 5]
 ```
 
 #### Filter
@@ -199,5 +199,17 @@ array.Uniq(
 
     Filter(func(i int) bool {
         return i < 3
-    }, []int{1, 2, 3, 4, 5}) ==> [1 2]
+    }, []int{1, 2, 3, 4, 5}) //==> [1 2]
+```
+
+#### Reverse
+
+```go
+array.Reverse([]int{1, 2, 3, 4, 5}) //==> [5 4 3 2 1]
+```
+
+#### Tail
+
+```go
+array.Tail([]string{"a", "b", "c", "d", "e"}) //==> ["b", "c", "d", "e"]
 ```
